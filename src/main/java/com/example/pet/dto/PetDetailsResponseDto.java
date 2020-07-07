@@ -4,17 +4,18 @@ package com.example.pet.dto;
 import com.example.pet.enumpac.Status;
 
 public class PetDetailsResponseDto {
-	private String petName;
+	private int petId;
+	public int getPetId() {
+		return petId;
+	}
+	public void setPetId(int petId) {
+		this.petId = petId;
+	}
 	private double petPrice;
 	private String description;
 	private Status status;
 	
-	public String getPetName() {
-		return petName;
-	}
-	public void setPetName(String petName) {
-		this.petName = petName;
-	}
+	
 	public double getPetPrice() {
 		return petPrice;
 	}

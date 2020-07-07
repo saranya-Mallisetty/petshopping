@@ -1,12 +1,14 @@
 package com.example.pet.model;
 
+import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.Id;
 
 import com.example.pet.enumpac.Status;
-
+@Entity
 public class Pet {
-	
+	@Id
 	private int petId;
 	private String petName;
 	private double petPrice;
