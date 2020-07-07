@@ -1,24 +1,10 @@
-package com.example.pet.model;
+package com.example.pet.dto;
 
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-@Entity
-public class User {
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int userId;
+public class UserDto {
+	
 	private String userName;
 	private String password;
 	private String mobileNumber;
-	public int getUserId() {
-		return userId;
-	}
-	public void setUserId(int userId) {
-		this.userId = userId;
-	}
 	public String getUserName() {
 		return userName;
 	}
@@ -38,8 +24,5 @@ public class User {
 		this.mobileNumber = mobileNumber;
 	}
 
-
-
-	
 
 }
